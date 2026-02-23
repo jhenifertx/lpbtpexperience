@@ -1,7 +1,6 @@
 import { Header } from '@/components/common/Header';
 import { Footer } from '@/components/common/Footer';
 import { Hero } from '@/sections/Hero';
-import { LogoCarousel } from '@/components/ui/LogoCarousel';
 import { Problems } from '@/sections/Problems';
 import { Positioning } from '@/sections/Positioning';
 import { HowWeWork } from '@/sections/HowWeWork';
@@ -14,7 +13,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <LogoCarousel />
       <Problems />
       <Positioning />
       <HowWeWork />

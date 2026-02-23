@@ -5,7 +5,6 @@ export async function POST(request: Request) {
         const data = await request.json();
 
         // Simulating HubSpot integration
-        console.log('Form data received:', data);
 
         // In a real scenario, we would send this data to HubSpot API here
 

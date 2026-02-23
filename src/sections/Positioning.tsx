@@ -18,7 +18,7 @@ export const Positioning = () => {
                             <ImmersiveBackground />
                             <div className="relative z-10">
                                 <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-white">
-                                    A Prime Control transforma o SAP para <br />
+                                    A Prime Control transforma o SAP para{' '}
                                     <span className="text-[var(--primary-light)]">evoluir com inteligência</span>
                                 </h3>
                                 <p className="text-gray-300 text-lg leading-relaxed font-light">

@@ -38,7 +38,7 @@ export const HowWeWork = () => {
             <div className="container mx-auto px-4 lg:px-8 relative z-10">
                 <div className="text-center max-w-4xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                        Atuamos exatamente no ponto crítico <br />
+                        Atuamos exatamente no ponto crítico{' '}
                         <span className="text-[var(--primary-light)]">entre inovação e produção</span>
                     </h2>
                     <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -47,7 +47,7 @@ export const HowWeWork = () => {
                 </div>
 
                 <div className="relative w-full mask-linear-fade">
-                    <div className="flex animate-marquee gap-8 w-max hover:[animation-play-state:paused]">
+                    <div className="flex custom-marquee-anim gap-8 w-max hover:[animation-play-state:paused]">
                         {[...services, ...services].map((service, index) => (
                             <div
                                 key={index}
