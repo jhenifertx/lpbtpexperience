@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 
-const AnimatedNumber = ({ end, suffix = "", duration = 2000 }: { end: number, suffix?: string, duration?: number }) => {
+const AnimatedNumber = ({ end, prefix = "", suffix = "", duration = 2000 }: { end: number, prefix?: string, suffix?: string, duration?: number }) => {
     const [count, setCount] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ const AnimatedNumber = ({ end, suffix = "", duration = 2000 }: { end: number, su
 
     return (
         <div ref={ref} className="font-black font-heading text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-300 text-6xl md:text-7xl lg:text-[80px] leading-none mb-2 md:mb-4 drop-shadow-lg">
-            {count}{suffix}
+            {prefix}{count}{suffix}
         </div>
     );
 };
@@ -53,12 +53,12 @@ export const Stats = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
                     {/* Stat 1 */}
                     <div className="flex flex-col items-center text-center gap-2">
-                        <AnimatedNumber end={10} suffix="x" />
+                        <AnimatedNumber end={40} prefix="-" suffix="%" />
                         <h3 className="font-bold font-heading text-white text-xl lg:text-2xl mb-2">
-                            Velocidade em Integrações
+                            Redução de Falhas
                         </h3>
                         <p className="font-normal font-sans text-[#E4E4E4] text-sm lg:text-base max-w-[300px]">
-                            Redução no tempo de desenvolvimento e deploy de integrações SAP
+                            Redução de falhas em produção em projetos de implementação SAP
                         </p>
                     </div>
 
@@ -75,7 +75,7 @@ export const Stats = () => {
 
                     {/* Stat 3 */}
                     <div className="flex flex-col items-center text-center gap-2">
-                        <AnimatedNumber end={40} suffix="+" />
+                        <AnimatedNumber end={60} suffix="+" />
                         <h3 className="font-bold font-heading text-white text-xl lg:text-2xl mb-2">
                             Projetos Entregues
                         </h3>
