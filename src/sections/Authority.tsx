@@ -74,25 +74,25 @@ export const Authority = () => {
                     <div className="absolute top-0 left-0 w-[232px] h-[187px] bg-[#F97415] rounded-[32px]"></div>
 
                     {/* Main image container */}
-                    <div className="absolute top-[16px] left-[13px] w-[494px] h-[468px] rounded-[26px] overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] bg-[#0A224F]">
+                    <div className="absolute top-[16px] left-[13px] w-[494px] h-[468px] rounded-[26px] overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] bg-white flex justify-center items-center">
                         <Image
                             src="/images/img-btp25.png"
                             alt="Equipe Prime Control"
                             width={494}
                             height={468}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain p-4"
                         />
                     </div>
                 </div>
 
                 {/* Mobile Image Fallback */}
-                <div className="relative w-full aspect-square shrink-0 block md:hidden rounded-[27px] overflow-hidden shadow-2xl bg-[#0A224F]">
+                <div className="relative w-full aspect-square shrink-0 block md:hidden rounded-[27px] overflow-hidden shadow-2xl bg-white flex justify-center items-center">
                     <Image
                         src="/images/img-btp25.png"
                         alt="Equipe Prime Control"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
+                        className="object-contain p-4"
                     />
                 </div>
             </div>
