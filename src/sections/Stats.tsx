@@ -53,7 +53,7 @@ export const Stats = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
                     {/* Stat 1 */}
                     <div className="flex flex-col items-center text-center gap-2">
-                        <AnimatedNumber end={40} prefix="-" suffix="%" />
+                        <AnimatedNumber end={40} suffix="%" />
                         <h3 className="font-bold font-heading text-white text-xl lg:text-2xl mb-2">
                             Redução de Falhas
                         </h3>
