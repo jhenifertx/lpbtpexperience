@@ -60,8 +60,9 @@ export const Hero = () => {
                     <Button
                         variant="secondary"
                         className="border border-white/20 hover:bg-white/10 hover:border-white/40 backdrop-blur-sm"
+                        onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                     >
-                        Faça o diagnóstico do seu SAP
+                        Conheça nossas soluções.
                     </Button>
                 </div>
             </div>

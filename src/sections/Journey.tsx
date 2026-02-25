@@ -18,7 +18,7 @@ export const Journey = () => {
     };
 
     return (
-        <section className="py-24 bg-gray-50 relative overflow-hidden" id="journey">
+        <section className="py-24 bg-gray-50 relative overflow-hidden" id="services">
             {/* Animated Light Effects (Prime Design System) */}
             <AnimatedBlobs />
 
