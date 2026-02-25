@@ -30,7 +30,7 @@ export const Footer = () => {
                         </Link>
                     </div>
                     <p className="text-gray-400 text-sm">
-                        Copyright © 2025 | All Rights Reserved
+                        Copyright © 2026 | All Rights Reserved
                     </p>
                 </div>
 
