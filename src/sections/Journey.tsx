@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Card } from '@/components/ui/Card';
-import { ArrowRight, CheckCircle, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { ImmersiveBackground } from '@/components/ui/ImmersiveBackground';
+import { ChevronDown } from 'lucide-react';
 import { AnimatedBlobs } from '@/components/ui/AnimatedBlobs';
 
 import { JOURNEY_STEPS } from '@/lib/constants';
@@ -90,58 +87,7 @@ export const Journey = () => {
                     </div>
                 </div>
 
-                {/* Integration/CTA Card */}
-                <div className="max-w-5xl mx-auto relative">
-                    {/* Decorative Gradients for Card */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--primary)] rounded-[2rem] blur opacity-20 animate-pulse"></div>
 
-                    <Card variant="dark" className="p-8 md:p-14 relative overflow-hidden border-none shadow-2xl rounded-[1.5rem]">
-                        <ImmersiveBackground />
-
-                        <div className="flex flex-col lg:flex-row items-center gap-12 relative z-10">
-                            <div className="flex-1 space-y-8">
-                                <div>
-                                    <div className="inline-block px-3 py-1 bg-[var(--accent)]/20 text-[var(--accent)] text-xs font-bold rounded-full mb-4">
-                                        PASSO ZERO
-                                    </div>
-                                    <h3 className="text-2xl md:text-3xl font-bold font-heading mb-4 text-white leading-tight">
-                                        Diagnóstico Executivo <span className="text-[var(--accent)]">Gratuito</span>
-                                    </h3>
-                                    <p className="text-gray-300 text-lg">
-                                        Entenda seu nível de maturidade e prontidão para o SAP BTP e Clean Core.
-                                    </p>
-                                </div>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {[
-                                        "Análise de arquitetura AS-IS",
-                                        "Mapeamento de integrações",
-                                        "Scan de Z-codes (Clean Core)",
-                                        "Roadmap de inovação"
-                                    ].map((item, i) => (
-                                        <div key={i} className="flex items-center gap-3 bg-white/5 p-3 rounded-lg border border-white/5">
-                                            <CheckCircle className="w-5 h-5 text-[var(--accent)] shrink-0" />
-                                            <span className="text-gray-200 text-sm font-medium">{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="w-full lg:w-auto flex flex-col gap-4">
-                                <Button
-                                    variant="primary"
-                                    className="whitespace-nowrap text-lg px-8 py-5 shadow-xl shadow-[var(--accent)]/20 hover:scale-105"
-                                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                                >
-                                    Solicitar Diagnóstico <ArrowRight className="ml-2 w-5 h-5" />
-                                </Button>
-                                <p className="text-center text-xs text-white/40">
-                                    Vagas limitadas para este mês.
-                                </p>
-                            </div>
-                        </div>
-                    </Card>
-                </div>
             </div>
         </section>
     );
